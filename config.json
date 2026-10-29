@@ -1,0 +1,62 @@
+{
+  "timeframes": [
+    "15m",
+    "1h"
+  ],
+  "markets": [
+    {
+      "name": "US500 (S&P 500)",
+      "source": "mexc",
+      "id": "SPX500_USDT",
+      "session": "cfd",
+      "fallback": {
+        "source": "yahoo",
+        "id": "ES=F",
+        "note": "backup feed: S&P futures, ~10 min late"
+      }
+    },
+    {
+      "name": "US100 (Nasdaq 100)",
+      "source": "mexc",
+      "id": "NAS100_USDT",
+      "session": "cfd",
+      "fallback": {
+        "source": "yahoo",
+        "id": "NQ=F",
+        "note": "backup feed: Nasdaq futures, ~10 min late"
+      }
+    },
+    {
+      "name": "US30 (Dow)",
+      "source": "mexc",
+      "id": "US30_USDT",
+      "session": "cfd",
+      "fallback": {
+        "source": "yahoo",
+        "id": "YM=F",
+        "note": "backup feed: Dow futures, ~10 min late"
+      }
+    },
+    {
+      "name": "XAUUSD (Gold)",
+      "source": "mexc",
+      "id": "XAU_USDT",
+      "session": "cfd",
+      "fallback": {
+        "source": "yahoo",
+        "id": "GC=F",
+        "note": "backup feed: gold futures, ~10 min late"
+      }
+    },
+    {
+      "name": "BTCUSD",
+      "source": "binance",
+      "id": "BTCUSDT",
+      "fallback": {
+        "source": "coinbase",
+        "id": "BTC-USD",
+        "note": "Coinbase feed"
+      }
+    }
+  ]
+}
